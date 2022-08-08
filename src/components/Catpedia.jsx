@@ -47,9 +47,7 @@ function Catpedia() {
     findOneCat(cat_id_search);
   };
 
-  const handleClickDetails = () => {
-    
-  }
+  const handleClickDetails = () => {};
 
   const handleCreateCat = () => {
     const cat_to_be_created = { ...newCat };
@@ -121,19 +119,19 @@ function Catpedia() {
       </div>
       <div className="cards_list">
         {catsList.map((cat, index) => (
-        <div key={index} className="card">
-          <img
-            src={cat.image}
-            className="img"
-            alt={`Foto do gato ${cat.breed}`}
-          />
-          <p className="breed">{cat.breed}</p>
-          <button className="details_btn" onClick={handleClickDetails}>Details</button>
-        </div>
-        
-      ))}
+          <div key={index} className="card">
+            <img
+              src={cat.image}
+              className="img"
+              alt={`Foto do gato ${cat.breed}`}
+            />
+            <p className="breed">{cat.breed}</p>
+            <button className="details_btn" onClick={handleClickDetails}>
+              Details
+            </button>
+          </div>
+        ))}
       </div>
-      
     </div>
   );
 }

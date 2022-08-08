@@ -1,110 +1,104 @@
 .cat_list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 65vh;
 }
 
 .search_add {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .cards_list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #5e89b4;
-    font-size: 1.2rem;
-    height: 400px;
-    width: 380px;
-    position: relative;
-    background: rgba(255, 255, 255, .1);
-    z-index: 1;
-    top: 3em;
-    border: 1px solid rgba(255, 255, 255, .25);
-    border-radius: 6px;
-    backdrop-filter: blur(10px);
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5e89b4;
+  font-size: 1.2rem;
+  height: 400px;
+  width: 380px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  top: 3em;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+  gap: 5px;
 }
 
 .img {
-    height: 70%;
+  height: 70%;
 }
 
 .search {
-    padding: 6px;
-    color: #eee;
-    background: linear-gradient(
-        to bottom right,
-        #9BA4B3, #C48854);
-        border-radius: 8px;
-        display: inline-flex;
-        align-items: center;
+  padding: 6px;
+  color: #eee;
+  background: linear-gradient(to bottom right, #9ba4b3, #c48854);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .search :is(input, button) {
-    color: inherit;
-    border: none;
-    background: transparent;
-    outline: none;
+  color: inherit;
+  border: none;
+  background: transparent;
+  outline: none;
 }
 
 .search_input {
-    width: 0;
-    transition: width .5s;
+  width: 0;
+  transition: width 0.5s;
 }
 
 .search_btn {
-    width: 25px;
-    height: 25px;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
 }
 
 .search:focus-within input {
-    width: 100px;
+  width: 100px;
 }
 
 ::placeholder {
-    color: inherit;
+  color: inherit;
 }
 
 .add_btn {
-    padding: 11px;
-    color: #eee;
-    border: none;
-    cursor: pointer;
-    background: linear-gradient(
-        to bottom right,
-        #9BA4B3, #C48854);
-        border-radius: 8px;
-        display: inline-flex;
-        align-items: center;
+  padding: 11px;
+  color: #eee;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #9ba4b3, #c48854);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .details_btn {
-    padding: 8px;
-    color: #eee;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    background: linear-gradient(
-        to bottom right,
-        #9BA4B3, #C48854);
-        border-radius: 8px;
-        display: inline-flex;
-        align-items: center;
+  padding: 8px;
+  color: #eee;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #9ba4b3, #c48854);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
 }

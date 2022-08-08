@@ -35,11 +35,7 @@ function CatForm(props) {
         name="video"
         value={props.video_value}
       />
-      <button
-        type="button"
-        className="button_modal"
-        onClick={props.onClick}
-      >
+      <button type="button" className="button_modal" onClick={props.onClick}>
         {props.button_label}
       </button>
     </div>

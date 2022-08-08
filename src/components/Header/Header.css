@@ -1,24 +1,25 @@
 @font-face {
-    font-family: 'Catlove';
-    src: url(../../assets/fonts/Catlove.ttf) format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Catlove";
+  src: url(../../assets/fonts/Catlove.ttf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .header_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
 }
 
 .header_content a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header_text {
-    font-family: 'Catlove';
-    font-size: 8rem;
-    color: #90a9c2;
-    margin-top: -80px;
-    cursor: pointer;
+  font-family: "Catlove";
+  font-size: 8rem;
+  color: #90a9c2;
+  margin-top: -80px;
+  cursor: pointer;
 }

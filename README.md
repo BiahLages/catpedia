@@ -4,12 +4,8 @@
 
 Este projeto foi realizado com fim de aprendizado no segundo módulo do curso de Desenvolvimento Web Front-End da BlueEdTech no ano de 2022.
 
-## API Fake
-
-Para armazenar os dados desse projeto, utilizei uma API fake criada por mim, que pode ser encontrada no link:
-<a href="https://github.com/BiahLages/fake-api" target="_blank">Fake API</a>
-
-Para rodar a fake API, digite no terminal: json-server --watch db.json --port 8000
+## Link do Deploy
+<a href="https://catpedia.vercel.app/" target="_blank"><img src="./assets/img/codeicon.png" style="width:10%"></a>
 
 ## Stacks
 

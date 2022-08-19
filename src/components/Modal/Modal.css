@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 20px;
   color: #5e89b4;
 }
 
 .create-form input {
   border-radius: 5px;
-  width: 350px;
+  width: 450px;
   height: 18px;
 }
 
@@ -18,13 +18,26 @@
   justify-content: center;
 }
 
+.details_card {
+  color: #5e89b4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.details_card h1 {
+  font-family: "Catlove";
+  padding-bottom: 10px;
+}
+
 .Modal {
   margin-top: 200px;
   padding: 20px 80px 20px 20px;
   min-width: 50vw;
-  min-height: 100px;
-  max-width: 600px;
-  max-height: 350px;
+  min-height: 300px;
+  max-width: 900px;
+  max-height: 700px;
   background: rgba(230, 199, 170, 0.847);
   position: relative;
   border-radius: 10px;
@@ -72,7 +85,7 @@
 }
 
 .button_modal {
-  margin-top: 15px;
+  margin-top: 65px;
   padding: 10px;
   border: none;
   color: #eee;

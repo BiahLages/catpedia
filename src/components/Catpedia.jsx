@@ -32,7 +32,7 @@ function Catpedia() {
 
   const [showCatForm, setShowCatForm] = useState(false);
   const [showCatFormEdit, setShowCatFormEdit] = useState(false);
-  const [ShowCatDetails, setShowCatDetails] = useState(false);
+  const [showCatDetails, setShowCatDetails] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
 
   async function findAllCats() {
@@ -79,12 +79,11 @@ function Catpedia() {
     findOneCat(cat_id_search);
   };
 
-  const handleClickDetails = async (event) => {
-    const cat = await CatService.getById(event.target.id);
-    setShowCat([cat]);
+  async function handleClickDetails(id) {
+    const showCat = await CatService.getById(id);
+    setShowCat({ ...showCat });
     setShowCatDetails(true);
-    console.log(cat);
-  };
+  }
 
   const handleCreateCat = () => {
     const cat_to_be_created = { ...newCat };
@@ -105,9 +104,9 @@ function Catpedia() {
     setAttCat({ ...attCat, ...cat });
   };
 
-  const handleClickDelete = (event) => {
+  const handleClickDelete = (id) => {
     setShowDeleteModal(true);
-    setCat({ cat_id: event.target.id });
+    setCat({ cat_id: id });
   };
 
   const handleEditCat = () => {
@@ -203,11 +202,18 @@ function Catpedia() {
           </Modal>
         ) : null}
 
-        {ShowCatDetails ? (
+        {showCatDetails ? (
           <Modal closeModal={closeModalDetails}>
-            <h1 className="breed">{cat.breed}</h1>
-            <p className="description">{cat.description}</p>
-            <iframe className="video">{cat.video}</iframe>
+            <div className="details_card">
+              <h1 className="breed">{showCat.breed}</h1>
+              <p className="description">{showCat.description}</p>
+              <iframe
+                width="504"
+                height="284"
+                className="video"
+                src={showCat.video}
+              />
+            </div>
           </Modal>
         ) : null}
 
@@ -246,7 +252,7 @@ function Catpedia() {
             <button
               id={cat.id}
               className="details_btn"
-              onClick={handleClickDetails}
+              onClick={() => handleClickDetails(cat.id)}
             >
               Details
             </button>
@@ -270,7 +276,7 @@ function Catpedia() {
                 height="16"
                 fill="currentColor"
                 className="bi bi-trash delete"
-                onClick={handleClickDelete}
+                onClick={() => handleClickDelete(cat.id)}
                 viewBox="0 0 16 16"
               >
                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
@@ -280,8 +286,6 @@ function Catpedia() {
                 />
               </svg>
             </div>
-
-            
           </div>
         ))}
       </div>

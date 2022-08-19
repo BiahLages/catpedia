@@ -6,10 +6,10 @@ const CatContext = {
 
 const urls = {
   development: "http://localhost:8000",
-  production: "https://fake-api-cat.herokuapp.com/"
+  production: "https://fake-api-cat.herokuapp.com"
 }
 
 export const Api = {
-  baseUrl: "https://fake-api-cat.herokuapp.com/",
+  baseUrl: urls[process.env.NODE_ENV],
   ...CatContext,
 };

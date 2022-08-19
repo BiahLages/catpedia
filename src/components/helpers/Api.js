@@ -10,6 +10,6 @@ const urls = {
 }
 
 export const Api = {
-  baseUrl: "https://fake-api-cat.herokuapp.com/",
+  baseUrl: urls[process.env.NODE_ENV],
   ...CatContext,
 };

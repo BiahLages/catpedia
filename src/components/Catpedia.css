@@ -123,3 +123,12 @@
   gap: 20px;
   margin-left: 300px;
 }
+
+@media (max-width: 390px) {
+  .card {
+    width: 340px;
+  }
+  .edit_delete {
+    margin-left: 260px;
+  }
+}

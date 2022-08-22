@@ -23,3 +23,17 @@
   margin-top: -80px;
   cursor: pointer;
 }
+
+@media (max-width: 550px) {
+  .header_text {
+    font-size: 6rem;
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 390px) {
+  .header_text {
+    font-size: 4rem;
+    margin-top: -30px;
+  }
+}

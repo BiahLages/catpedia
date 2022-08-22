@@ -5,7 +5,7 @@
 Este projeto foi realizado com fim de aprendizado no segundo módulo do curso de Desenvolvimento Web Front-End da BlueEdTech no ano de 2022.
 
 ## Link do Deploy
-<a href="https://catpedia.vercel.app/" target="_blank"><img src="./assets/img/codeicon.png" style="width:10%"></a>
+<a href="https://catpedia.vercel.app/" target="_blank"><img src="/favicon.ico" style="width:10%"></a>
 
 ## Stacks
 

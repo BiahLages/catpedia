@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto foi realizado com fim de aprendizado no segundo módulo do curso de Desenvolvimento Web Front-End da BlueEdTech no ano de 2022.
+Este projeto foi realizado com fim de aprendizado no quarto módulo do curso de Desenvolvimento Web Front-End da BlueEdTech no ano de 2022.
 
 ## Link do Deploy
 <a href="https://catpedia.vercel.app/" target="_blank"><img src="/public/favicon.ico" style="width:10%"></a>
